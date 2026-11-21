@@ -1,0 +1,84 @@
+{
+ "file": "solution.ndjson",
+ "bytes": 61570595788,
+ "lines": 1080769508,
+ "lines_not_recognised": 0,
+ "meta": {
+  "exporter": {
+   "name": "lean4export",
+   "version": "3.1.0"
+  },
+  "format": {
+   "version": "3.1.0"
+  },
+  "lean": {
+   "githash": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+   "version": "4.33.1"
+  }
+ },
+ "records_by_kind": {
+  "app": 989707003,
+  "axiom": 3,
+  "bvar": 7426,
+  "const": 2131429,
+  "def": 214241,
+  "forallE": 23893670,
+  "imax": 352,
+  "inductive": 7969,
+  "lam": 47121325,
+  "letE": 2259622,
+  "max": 18634,
+  "meta": 1,
+  "natVal": 27168,
+  "num": 6939987,
+  "opaque": 91,
+  "param": 185,
+  "proj": 65718,
+  "quot": 4,
+  "sort": 812,
+  "str": 7125163,
+  "strVal": 162,
+  "succ": 2433,
+  "thm": 1246110
+ },
+ "axiom_declarations": [
+  {
+   "name": "propext",
+   "isUnsafe": false
+  },
+  {
+   "name": "Quot.sound",
+   "isUnsafe": false
+  },
+  {
+   "name": "Classical.choice",
+   "isUnsafe": false
+  }
+ ],
+ "unsafe_or_partial_flags_in_declarations": {
+  "\"isUnsafe\":true": 0,
+  "\"safety\":\"unsafe\"": 0,
+  "\"safety\":\"partial\"": 0
+ },
+ "name_strings": {
+  "records": 7125163,
+  "unique": 916245,
+  "containing_slash_or_backslash": 0,
+  "samples": []
+ },
+ "string_literals": {
+  "records": 162,
+  "containing_slash_or_backslash": 0,
+  "samples": []
+ },
+ "name_components_equal_to": {
+  "sorryAx": 0,
+  "sorry": 0,
+  "ofReduceBool": 0,
+  "reduceBool": 0,
+  "trustCompiler": 0,
+  "native_decide": 0
+ },
+ "name_components_containing_sorry": 0,
+ "seconds": 248.9
+}

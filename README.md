@@ -42,8 +42,8 @@ runs the checker and writes `RECEIPT.md`.
 - Controls that must be present are found (`propext` 2, `Quot` 17,585,
   `riemannHypothesis` 1), so the search does see names in this format.
 
-Limits: this is a byte search on a third-party repack, not a parse of the
-original ndjson, and it has no positive control for string literals.
+Limits of this first scan: it is a byte search on a third-party repack, not a
+parse of the original ndjson. The section below removes both limits.
 
 ## Challenge export from two build directories (issue #6)
 
@@ -59,6 +59,18 @@ Result, in `issue6/EXPORT_TEST.md`:
 Limits: this is the challenge export, not the solution export; Mathlib's oleans
 came from the official cache in both runs; both runs were on one machine and
 not sandboxed.
+
+## The scan, repeated on the original MIT export (issue #6)
+
+`issue6/solution_ndjson_check.sh` downloads MIT's `solution.ndjson.zst`, checks size
+and sha256 before and after unpacking, scans the 61.6 GB ndjson line by line and
+packs it to Susz. Result, in `issue6/SOLUTION_NDJSON_CHECK.md`:
+
+- My Susz pack of MIT's `solution.ndjson` is byte-identical to the Susz file used
+  above, so the Gruszka check and the byte scan apply to the MIT export.
+- 1,080,769,508 lines, 1,468,418 declarations, exactly three axiom declarations
+  (`propext`, `Quot.sound`, `Classical.choice`), no `sorryAx`.
+- 7,125,163 name strings and 162 string literals, none containing `/` or `\`.
 
 ## Notes
 

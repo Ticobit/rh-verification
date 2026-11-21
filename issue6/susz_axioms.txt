@@ -1,0 +1,6 @@
+axioms: read MAIN: 14065150 names, 21604 levels, 224977562 expressions, 1468418 declarations (2.9 s)
+axioms: closure: every declaration, 1468418 (0.0 s)
+axioms: 3 axioms used, 0 unused (0.0 s)
+used Classical.choice
+used Quot.sound
+used propext

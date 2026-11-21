@@ -2,3 +2,5 @@ gruszka/
 *.susz
 .DS_Store
 issue6/scan.log
+work/
+issue6/solution_check.log
