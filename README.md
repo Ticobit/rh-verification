@@ -45,6 +45,21 @@ runs the checker and writes `RECEIPT.md`.
 Limits: this is a byte search on a third-party repack, not a parse of the
 original ndjson, and it has no positive control for string literals.
 
+## Challenge export from two build directories (issue #6)
+
+`issue6/challenge_export_test.sh` runs step 1 of the riemann-hypothesis README
+(the same commands as its CI job) in two clones at different absolute paths.
+Result, in `issue6/EXPORT_TEST.md`:
+
+- Both exports have sha256 `bd484ac9…b2b9` (350,862,311 bytes, 6,495,712 lines),
+  identical to the sha256 published by the repository's CI, which runs on Linux.
+  This run was on macOS arm64.
+- `Challenge.olean` has the same sha256 in both directories.
+
+Limits: this is the challenge export, not the solution export; Mathlib's oleans
+came from the official cache in both runs; both runs were on one machine and
+not sandboxed.
+
 ## Notes
 
-The script was written with Claude (Anthropic). I ran it and reviewed the output.
+The scripts were written with Claude (Anthropic). I ran them and reviewed the output.
