@@ -32,6 +32,19 @@ runs the checker and writes `RECEIPT.md`.
   <https://github.com/leanprover-community/riemann-hypothesis>.
 - It says nothing about understanding the mathematics.
 
+## Scan of the solution export (for riemann-hypothesis issue #6)
+
+`issue6/scan_export.py` does a byte-level scan of the same Susz file
+(5,825,045,873 bytes); results are in `issue6/scan_result.json`.
+
+- `sorryAx`, `sorry`, `ofReduceBool`, `trustCompiler`, `native_decide`: 0 occurrences each.
+- 18 path-like patterns (`/Users/`, `/home/`, `/tmp/`, `.lean`, `.olean`, ...): 0 occurrences each.
+- Controls that must be present are found (`propext` 2, `Quot` 17,585,
+  `riemannHypothesis` 1), so the search does see names in this format.
+
+Limits: this is a byte search on a third-party repack, not a parse of the
+original ndjson, and it has no positive control for string literals.
+
 ## Notes
 
 The script was written with Claude (Anthropic). I ran it and reviewed the output.

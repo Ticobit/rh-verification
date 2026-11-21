@@ -1,0 +1,78 @@
+{
+ "file": "rh-alpoge-5ea74b91.susz",
+ "bytes_total": 5825045873,
+ "bytes_scanned": 5825045873,
+ "complete": true,
+ "seconds": 20.4,
+ "groups": {
+  "controls": {
+   "propext": 2,
+   "Classical": 713,
+   "choice": 241,
+   "Quot": 17585,
+   "sound": 42,
+   "riemannHypothesis": 1,
+   "RiemannHypothesis": 3
+  },
+  "axiom_names": {
+   "sorryAx": 0,
+   "sorry": 0,
+   "ofReduceBool": 0,
+   "trustCompiler": 0,
+   "native_decide": 0
+  },
+  "paths": {
+   "/Users/": 0,
+   "/home/": 0,
+   "/root/": 0,
+   "/tmp/": 0,
+   "/private/": 0,
+   "/mnt/": 0,
+   "/var/": 0,
+   "/opt/": 0,
+   "/nix/": 0,
+   "/data/": 0,
+   "/scratch/": 0,
+   "/build/": 0,
+   "/workspace/": 0,
+   "/runner/": 0,
+   "C:\\": 0,
+   ".lean": 0,
+   ".lake": 0,
+   ".olean": 0
+  }
+ },
+ "samples": {
+  "propext": [
+   {
+    "offset": 100630,
+    "context": "\u0002\u0001�\u0014\u0001\u000b\u0007\u0000\u0001�\u0014\u0002\u0000\u0001\u0001\u0001�\u0014\u0002\u0001\u0000\u0001\u0000\u0007propext\n�N�a\u0013\u0002\u0001\n\u0001�a\u0013\u0002\u0001\n\u0001�a\u0013\u0002\u0001\f\u0000\b\u0018\u0001\f\u0001\u0016�a\u0001\f\u0001\u0004�a\u0001\u0012"
+   },
+   {
+    "offset": 1002991,
+    "context": "\u0013\u0002\u0001\n\u0004\u0001\u0012\u0001��\u0001\u0000\u0006\u0001\u0002\u0016\u0000\u0001��\u0001\u0001\u0000\u000bpropext_iff\u0013\u0000\u0001\u0001�\u0004\u0003Ext\u0002��\u0001����\f\u0001��\u0001\u0007_hygCtx\u0001��\u0001\u0004"
+   }
+  ],
+  "riemannHypothesis": [
+   {
+    "offset": 1674708272,
+    "context": "\u0013\u0002\u0001\u0012\u0006���\u0006\u0000���i\u000b\u0002\u0001���\u0006\u0001\u0000\u0011riemannHypothesis\t���\u0006\u0000\u0012\u0002���\u0006\u0000���i\u0001\u0001���\u0006\u0001\u0000\u0016RiemannZetaZer"
+   }
+  ],
+  "RiemannHypothesis": [
+   {
+    "offset": 20950555,
+    "context": "\u0013\u0002\u0001\u0012\u0001��\u0013\u0000��\u0001\u0001\u00023\u0000\u0001��\u0013\u0001\u0000\u0011RiemannHypothesis\u0001��\u0013\b_proof_1\u0012\u0002��\u0013\u0000��~���\u0001\u0001��\u0013\u0001��\n\u000bRiema"
+   },
+   {
+    "offset": 89480196,
+    "context": "zes\u0001��3!GrowthBoundGivesRiemannHypothesis\u0002��4����\u0006\u0001��4\u0007_hygCtx\u0001��4\u0004_hyg\u0002��4\u0003\u0002��4\t"
+   },
+   {
+    "offset": 89483151,
+    "context": "\u0013\u0002\u0001\u0001��4!GrowthBoundGivesRiemannHypothesis\u0002ē4�ڀ�\u000f\u0001œ4\u0007_hygCtx\u0001Ɠ4\u0004_hyg\u0002Ǔ4>\u0013\u0000\u0001\u0002�"
+   }
+  ]
+ },
+ "input_sha256": "a5b17c25c97daf1ab1ed69addc1a0be09f1ccdd122e718c3a7670d9044d7aceb"
+}
