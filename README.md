@@ -1,0 +1,37 @@
+# rh-verification
+
+An independent re-check, on a desktop Mac, of the Lean export of Levent Alpöge's
+proof of the Riemann Hypothesis (announced 2026-11-20), using the
+[Gruszka](https://github.com/jasisz/gruszka) kernel.
+
+**Result:** `accepted`, exit code 0, in 197.5 s on a Mac mini (Apple M6, 24 GB RAM)
+with 8 workers. Full details in [RECEIPT.md](RECEIPT.md).
+
+## Reproduce
+
+Needs git, curl and a Rust toolchain. Downloads a 5.83 GB file.
+
+```
+git clone https://github.com/Ticobit/rh-verification
+cd rh-verification
+./verify.sh        # or ./verify.sh 4 to use fewer workers and less memory
+```
+
+The script builds Gruszka from source, downloads the export, checks its sha256,
+runs the checker and writes `RECEIPT.md`.
+
+## What this does and does not show
+
+- It shows that every declaration in the solution export type-checks in a kernel
+  implemented independently of Lean's own.
+- The input is the Susz repack of `solution.ndjson` (sha256 `5ea74b91…`, from
+  <https://math.mit.edu/~drew/grh/>) published by Gruszka's author. I did not
+  repack it from the ndjson myself.
+- It does not compare the proved statements against the challenge file. That is
+  the job of `lake comparator`; see
+  <https://github.com/leanprover-community/riemann-hypothesis>.
+- It says nothing about understanding the mathematics.
+
+## Notes
+
+The script was written with Claude (Anthropic). I ran it and reviewed the output.
